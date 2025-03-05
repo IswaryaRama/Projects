@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif; /* Set default font */
+    background-color: #f4f4f4; /* Light gray background */
+    display: flex;
+    justify-content: center; /* Center the music player horizontally */
+    align-items: center; /* Center the music player vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+/* Music Player Container */
+.music-player {
+    background-color: #fff; /* White background */
+    padding: 20px; /* Add padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 300px; /* Fixed width */
+    text-align: center; /* Center align text */
+}
+
+/* Song Information Section */
+.song-info {
+    margin-bottom: 20px; /* Add space below the song info */
+}
+
+.song-info h2 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.5rem; /* Larger font size for song title */
+}
+
+.song-info p {
+    margin: 5px 0 0; /* Add space between artist and album */
+    color: #666; /* Gray text color */
+}
+
+/* Controls Section */
+.controls {
+    margin-top: 20px; /* Add space above the controls */
+}
+
+.controls button {
+    padding: 10px 20px; /* Add padding to the button */
+    font-size: 1rem; /* Set font size */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border: none; /* Remove default border */
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.controls button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.controls input[type="range"] {
+    width: 100%; /* Full width for range inputs */
+    margin-top: 10px; /* Add space above range inputs */
+}
+
+/* Volume Control Section */
+.volume-control {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center align items vertically */
+    margin-top: 10px; /* Add space above the volume control */
+}
+
+.volume-control span {
+    margin: 0 10px; /* Add space around the volume label */
+    font-size: 0.9rem; /* Smaller font size */
+    color: #666; /* Gray text color */
+}
+
+.volume-control input[type="range"] {
+    flex: 1; /* Allow the slider to take up remaining space */
+}
+
+/* Playlist Section */
+.playlist {
+    margin-top: 20px; /* Add space above the playlist */
+    text-align: left; /* Align text to the left */
+}
+
+.playlist h3 {
+    margin: 0 0 10px; /* Add space below the playlist title */
+    font-size: 1.2rem; /* Set font size */
+}
+
+.playlist ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.playlist li {
+    padding: 10px; /* Add padding to list items */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-bottom: 1px solid #ddd; /* Add a bottom border */
+}
+
+.playlist li:hover {
+    background-color: #f0f0f0; /* Light gray background on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .music-player {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}

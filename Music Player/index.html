@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <!-- Music Player Container -->
+    <div class="music-player">
+        <!-- Song Information Section -->
+        <div class="song-info">
+            <h2 id="song-title">Song Title</h2> <!-- Display current song title -->
+            <p id="artist">Artist</p> <!-- Display current song artist -->
+            <p id="album">Album</p> <!-- Display current song album -->
+        </div>
+
+        <!-- Audio Controls Section -->
+        <div class="controls">
+            <button id="play-pause">Play</button> <!-- Play/Pause button -->
+            <input type="range" id="progress" value="0"> <!-- Progress bar for seeking -->
+            <div class="volume-control">
+                <span>Volume: </span>
+                <input type="range" id="volume" min="0" max="1" step="0.1" value="1"> <!-- Volume slider -->
+                <span id="volume-label">100%</span> <!-- Volume percentage label -->
+            </div>
+        </div>
+
+        <!-- Playlist Section -->
+        <div class="playlist">
+            <h3>Playlist</h3>
+            <ul id="playlist">
+                <!-- Playlist items will be added dynamically using JavaScript -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="audio" src="audio/The Chainsmokers - All We Know.mp3"></audio> <!-- HTML5 audio element -->
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
