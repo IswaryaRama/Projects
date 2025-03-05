@@ -1,0 +1,179 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+h2 {
+  color: #555;
+}
+
+/* Input Section */
+.input-section {
+  margin-bottom: 20px;
+}
+
+.input-section label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.input-section input,
+.input-section select,
+.input-section button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-section button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.input-section button:hover {
+  background-color: #218838;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+/* Filter Section */
+.filter-section {
+  margin-bottom: 20px;
+}
+
+.filter-section h2 {
+  margin-bottom: 10px;
+}
+
+.filter-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.filter-controls select,
+.filter-controls button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.filter-controls button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.filter-controls button:hover {
+  background-color: #0056b3;
+}
+
+/* Transaction List */
+.transaction-list {
+  margin-bottom: 20px;
+  overflow-x: auto; /* Allow horizontal scrolling for small screens */
+}
+
+#transactions {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#transactions th,
+#transactions td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+#transactions th {
+  background-color: #f8f9fa;
+}
+
+#transactions td button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#transactions td button:hover {
+  background-color: #c82333;
+}
+
+/* Income and Expense Labels */
+.income-label {
+  color: green;
+  font-weight: bold;
+}
+
+.expense-label {
+  color: red;
+  font-weight: bold;
+}
+
+/* Summary Section */
+.summary-section {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.summary-section p {
+  margin: 5px 0;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .input-section input,
+  .input-section select,
+  .input-section button {
+    padding: 8px;
+  }
+
+  .filter-controls {
+    flex-direction: column;
+  }
+
+  #transactions th,
+  #transactions td {
+    padding: 8px;
+  }
+}
