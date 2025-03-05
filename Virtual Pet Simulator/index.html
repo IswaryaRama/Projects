@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Pet Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="day">
+    <div class="container">
+        <h1>Virtual Pet Simulator</h1>
+
+        <!-- Day-Night Indicator -->
+        <div class="day-night-indicator">
+            <span id="time-of-day">Day</span>
+        </div>
+
+        <!-- Pet Selection -->
+        <div class="pet-selection">
+            <label for="pet-type">Choose a Pet:</label>
+            <select id="pet-type">
+                <option value="cat">Cat</option>
+                <option value="dog">Dog</option>
+                <option value="bird">Bird</option>
+            </select>
+        </div>
+
+        <!-- Pet Display -->
+        <div class="pet-container">
+            <img id="pet-image" src="assets/cat-happy.png" alt="Virtual Pet">
+        </div>
+
+        <!-- Pet Status Indicators -->
+        <div class="status-container">
+            <div class="status">
+                <span>Hunger:</span>
+                <div class="progress-bar">
+                    <div id="hunger-bar" class="bar"></div>
+                </div>
+            </div>
+            <div class="status">
+                <span>Happiness:</span>
+                <div class="progress-bar">
+                    <div id="happiness-bar" class="bar"></div>
+                </div>
+            </div>
+            <div class="status">
+                <span>Energy:</span>
+                <div class="progress-bar">
+                    <div id="energy-bar" class="bar"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interaction Buttons -->
+        <div class="actions">
+            <button id="feed-button">
+                <img src="assets/food-icon.png" alt="Feed">
+                Feed
+            </button>
+            <button id="play-button">
+                <img src="assets/play-icon.png" alt="Play">
+                Play
+            </button>
+            <button id="sleep-button">
+                <img src="assets/sleep-icon.png" alt="Sleep">
+                Sleep
+            </button>
+        </div>
+
+        <!-- Achievements -->
+        <div class="achievements">
+            <h3>Achievements</h3>
+            <ul id="achievements-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

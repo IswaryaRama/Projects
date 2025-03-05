@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Day-Night Indicator */
+.day-night-indicator {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Pet Selection */
+.pet-selection {
+    margin-bottom: 20px;
+}
+
+.pet-selection label {
+    margin-right: 10px;
+}
+
+/* Pet Display */
+.pet-container {
+    margin-bottom: 20px;
+}
+
+#pet-image {
+    width: 150px;
+    height: 150px;
+    transition: transform 0.2s ease;
+}
+
+#pet-image:hover {
+    transform: scale(1.1);
+}
+
+/* Status Indicators */
+.status-container {
+    margin-bottom: 20px;
+}
+
+.status {
+    margin-bottom: 10px;
+}
+
+.status span {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 10px;
+}
+
+.bar {
+    height: 100%;
+    background-color: #007bff;
+    width: 100%;
+    transition: width 0.5s ease;
+}
+
+/* Interaction Buttons */
+.actions {
+    display: flex;
+    justify-content: space-around;
+}
+
+.actions button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.actions button:hover {
+    background-color: #0056b3;
+}
+
+.actions button img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Achievements */
+.achievements {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.achievements h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+}
+
+.achievements ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.achievements li {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+/* Day Mode */
+body.day {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Night Mode */
+body.night {
+    background-color: #333;
+    color: #fff;
+}
